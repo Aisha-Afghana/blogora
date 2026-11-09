@@ -58,7 +58,7 @@ function Home() {
         ) : blogs.length === 0 ? (
           <p> No blogs available yet.</p>
         ) : (
-          <div className="">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {blogs.map((blog) => (
               <BlogCard key={blog._id} blog={blog} />
             ))}
